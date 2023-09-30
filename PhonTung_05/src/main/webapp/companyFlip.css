@@ -1,0 +1,51 @@
+/*  flip flop 
+    https://codepen.io/UHU/pen/MPzKWZ 
+*/  /* */
+.card-wrap{  /* displaying block size */
+  width:45%;
+  height:100%;
+}
+
+
+.card{  /* fliping box */
+  position:relative;
+  width:100%;
+  height:100%;
+  /*preserve the back when fliping*/
+  transform-style:preserve-3d;
+  transition:1s all ease;
+
+}
+
+.card:hover{  /* */
+  transform:rotateY(180deg);
+}
+
+/*img block */
+.companyfront{
+    width:100%;      
+    height: 100%;            
+    border-radius:5px;
+    position:absolute;
+    /*hide backface*/
+    backface-visibility:hidden;
+    background-size: contain;  /*   https://stackoverflow.com/questions/8200204/fit-background-image-to-div
+                                    To scale the background image to fit inside the div   */
+    background-size: cover;    /*  To scale the background image to cover the whole div   */    
+    background-repeat: no-repeat;
+  
+}   
+    
+
+/*back card*/
+.companyback{
+  border-radius:5px;
+  position:absolute;
+  width:100%;
+  height:100%;
+  /*hide backface*/
+  backface-visibility:hidden;
+  color:#333;
+  font-size:1.5rem;
+  transform:rotateY(180deg);
+}

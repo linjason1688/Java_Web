@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>登入連線</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div id="exHeader">測試後端連線</div>
+        <div id="exContent">
+            <div id="exLeftAreaFunction">
+                後端伺服器案例:<br>
+                案例(1)
+                <form action="AccountPasswd" method="post" target="iFrameDisplay">
+                    帳號<input type="text" name="account" value="Coffee"><br>
+                    密碼<input type="text" name="passwd" value="XXXX"><br>
+                    <input type="submit" value="測試後端">
+                </form>
+            </div>
+            
+            <div id="exRightAreaDisplay">
+                <iframe name="iFrameDisplay"></iframe>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水電行專題</title>
+    <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="slideShow.js"></script>
+</head>
+<body onload="carouselOfDisplayRow_1();">
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="banner">
+        <div class="bannerLeft">
+            <a href="#">
+                <img src="image/chu.jpg" alt="中華大學logo">
+            </a>
+            <span>中華水電工程有限公司</span>
+        </div>
+
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="price.html">估價內容</a>
+            <a href="calendar.html">預約排程</a>
+            <a href="#service">專業服務</a>
+            <a href="#contact_info">聯絡我們</a>
+        </nav>
+    </div>
+
+    <div class="displayRow_1">
+        <div class="imgCarousel_auto_play" id="slideShow">
+            <img class="slideOfSlideShow">
+            <img class="slideOfSlideShow">
+            <img class="slideOfSlideShow">
+            <img class="slideOfSlideShow">
+            <img class="slideOfSlideShow">
+            <a class="prev" onclick="prev();">&lt;</a>
+            <a class="next" onclick="next();">&gt;</a>
+        </div>
+    </div>
+
+    <div class="displayRow_2" id="service">
+        <p>專業服務</p>
+    </div>
+
+    <div class="displayRow_3">
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service1.jpg" alt="">
+            </div>
+            <p class="serviceName">各式燈具汰換安裝</p>
+        </div>
+
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service2.png" alt="">
+            </div>
+            <p class="serviceName">馬桶衛浴汰換安裝</p>
+        </div>
+
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service3.jpg" alt="">
+            </div>
+            <p class="serviceName">各式水龍頭汰換安裝</p>
+        </div>
+
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service4.png" alt="">
+            </div>
+            <p class="serviceName">各式熱水器安裝</p>
+        </div>
+
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service5.jpg" alt="">
+            </div>
+            <p class="serviceName">各式馬達汰換安裝</p>
+        </div>
+
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service6.jpg" alt="">
+            </div>
+            <p class="serviceName">開關插座汰換安裝</p>
+        </div>
+
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service7.jpg" alt="">
+            </div>
+            <p class="serviceName">各式居家水電維修安裝</p>
+        </div>
+
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service8.jpg" alt="">
+            </div>
+            <p class="serviceName">全戶淨水設備安裝</p>
+        </div>
+
+        <div class="item">
+            <div class="itemPic">
+                <img src="image/service9.png" alt="">
+            </div>
+            <p class="serviceName">臉盆衛浴汰換安裝</p>
+        </div>
+    </div>
+
+    <footer id="contact_info">
+        <span class="company_name">中華水電</span>
+        <span class="name_phone_number">陳思凱0912-345-678</span>
+        <p>新竹市香山區五福路二段707號</p>
+        <a href="https://line.me/ti/p/QkSw6eNRqM">點我加LINE！免費通話！免簡訊費!</a>
+        <!-- <img src="image/Line_QR_Code.jpg" alt=""> -->
+    </footer>
+</body>
+</html>

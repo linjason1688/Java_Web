@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>後端到前端</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div id="banner">
+            This area is inside a box with blue color.<br>
+            (1) If you want to make text appearing centrally. You need to set up attribute's value.<br>
+            (2) Making you text bigger with font-size.<br>
+            (3) Making text blue by color.
+        </div>
+        <div id="container">
+            <div id="left">
+                <form action="javaServle" target="responseArea">
+                    <input type="text" size="15" name="question" value="who are you" placeholder="write down here">
+                    <input type="submit" value="connect to web server" >
+                </form>
+            </div>
+            <div id="right">
+                <iframe name="responseArea"></iframe>
+            </div>
+        </div>
+    </body>
+</html>

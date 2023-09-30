@@ -1,0 +1,49 @@
+
+<html>
+<head>
+    <title>動畫輪播</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css" />
+    <script type="text/javascript" src="slideShow.js"></script>
+</head>
+<body onload="carouselOfDisplayRow_1();">
+    <div class="headTitle">
+        <div class="headTitleLeft" >
+            <label for="checkByLabel"><image src="image/menuIcon.jpg"></label>
+        </div>
+        <div class="headTitleRight">
+            有昌茶廠
+        </div>
+    </div>
+                        
+    <input type="checkbox" id="checkByLabel" 
+            style="display:none;" >              
+    <div id="leftAreaFunction" class="slidingMenu" style="text-align:center;">
+        <div class="div_menu">
+            <ul>
+                <li>星期一</li>
+                <li>星期二</li>
+                <li>星期三</li>
+                <li>星期四</li>
+            </ul>         
+        </div>
+    </div>
+    <div class="container" style="display:flex; justify-content: center;">
+        <div class="displayRow_1">
+            <div class="slideShow ">  <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <img src="image/0.png" id="img0" class="slideOfSlideShow"/>
+                <img src="image/1.png" id="img1" class="slideOfSlideShow"/>
+                <img src="image/2.png" id="img2" class="slideOfSlideShow"/>
+                <a class="prev" onclick="prev();">&#10094;</a>
+                <a class="next" onclick="next();">&#10095;</a>                
+            </div>
+        </div>    
+            
+
+    </div>
+
+
+
+</body>
+</html>

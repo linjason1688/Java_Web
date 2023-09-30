@@ -1,0 +1,32 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2022年9月27日, 上午9:58:53
+    Author     : C7
+*/
+
+#banner{
+    width:100%; height:20vh;
+    border:solid 5px blue;
+    text-align: center;   /* make text appearing centrally  */
+    font-size: 32px;
+    color:blue;
+}
+#container{
+    width:100%; height:75vh;
+    background-color: yellow;
+    display:flex;
+    flex-direction: row;
+}
+
+#left{
+    width:25%; height:75vh;
+    background-color: yellowgreen;
+}
+
+#right{
+    width:75%; height:75vh;
+    background-color: pink;
+}

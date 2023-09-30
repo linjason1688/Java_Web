@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="shoppingCar.css" />
+    <link rel="stylesheet" href="companyFlip.css" />
+    <script src="slideShow.js"></script>
+    <script src="shoppingCar.js"></script>
+    <script src="menu.js" ></script>        
+</head>
+<body>
+    <div class="headTitle">
+        
+        <label class="headTitle_common" id="headTitle_A" for="checkByLabel" style="color:blue;">參觀</label>
+        
+        <label class="headTitle_common" 
+               id="headTitle_B" 
+               for="checkByLabel_Order"  
+               style="color:red;"
+               onclick='toggle_InputOfContainer_B();'>點餐</label>
+        
+        <div class="headTitle_common" id="headTitle_C">
+            新城風糖餐廳  
+        </div>
+    </div>
+    
+  
+                        
+    <input type="checkbox" id="checkByLabel" style="display:none; width:0; height:0;" >          
+    <div id="slidingMenu_A">
+        <div id="YYY" style="display: flex; flex-direction: column; background-color: white;">
+                <h3 style="color: purple; left: 0;">金牌饌</h3>
+                <a href="" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">品牌介紹</a>
+                <a href="" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">營運</a>
+                <a href="" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">美食定位</a>
+
+
+                <h3 style="color: purple; left: 0;">產品介紹</h3>
+                <a href="" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">雞肉</a>
+                <a href="" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">雞蛋</a>
+                <a href="" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">糖</a>
+                
+        </div>
+    </div>
+    
+    <input type="checkbox" id="checkByLabel_Order" style="display:none; width:0; height:0;">                          
+    <div id="slidingMenu_B">
+        <ul id='menu' style='list-style: none;  padding-left: 5px'>
+
+        </ul>       
+    </div>     
+
+    
+    
+
+    <div id="container_A">
+        <div class="displayRow_1">
+            <div class="slideShow " id="slideShow">  <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+                <a class="prev" onclick="prev();">&#10094;</a>
+                <a class="next" onclick="next();">&#10095;</a>                
+            </div>
+        </div>    
+        <div class="displayRow_2">
+              <div class="card-wrap" >
+                <div class="card">            
+                    <div class="companyfront" id="companyLeft"
+                         style="background-image:url(image/A.PNG);">  
+                        <span style="z-index:1; 
+                                   font-size: 24; 
+                                   float:left; color:red; 
+                                   background-color: yellow; 
+                                   font-family: 標楷體; ">務本踏實</span>
+                    </div>
+                    <div class="companyback">
+                        <p style="color: blue; font-family: 標楷體; font-size: 32;">品質第一</p> 
+                        <p style="color: blue; font-family: 標楷體; font-size: 32;">堅持專業</p> 
+                        <p style="color: blue; font-family: 標楷體; font-size: 32;">供需雙贏</p>
+                    </div>
+                </div>
+              </div>  
+              <div class="card-wrap" >
+                <div class="card">            
+                    <div class="companyfront" 
+                         style="background-image:url(image/D.PNG);">  
+                        <span style="z-index:1; 
+                                   font-size: 24; 
+                                   float:left; color:red; 
+                                   background-color: yellow; 
+                                   font-family: 標楷體; ">永續經營</span>
+                    </div> 
+                    <div class="companyback">
+                        <p style="color: red; font-family: 標楷體; font-size: 32;">唯才是用</p>
+                        <p style="color: red; font-family: 標楷體; font-size: 32;">崇尚品德</p>
+                        <p style="color: red; font-family: 標楷體; font-size: 32;">職人精神 </p>
+                    </div>
+                </div><!-- comment -->
+              </div>              
+        </div>    
+        <div class="displayRow_3">
+            TEL:，FAX：；地址：；http：
+        </div>       
+    </div>    
+    
+    
+    
+    <div id="container_B" >
+        <div id='container_B_shoppingHead'>
+            <div id='container_B_shoppingType'>
+                <input type="radio" id="forHere" name="serviceType" value="內用"><label for="forHere">內用</label>
+                <span id='tableNo' style='display:flex; flex-direction:row;'></span>
+                <input type='text' value='' size='2' style='text-align: center; font-size: 14px; '>桌                
+                <input type="radio" id="toGo" name="serviceType" value="外帶"><label for="toGo">外帶</label>
+                <input type="radio" id="delivery" name="serviceType" value="外送"><label for="delivery">外送</label>
+                <button value='下單' id='buttonPlaceOrder'
+                        style='background-color: greenyellow; color:red; 
+                        border:none; 
+                        display:flex; align-self: center; 
+                        font-size: 24px; font-family: 標楷體;'
+                        onclick='placeOrder();'>下單
+                </button>
+
+            </div>
+            <div id="container_B_shoppingTypeContent">
+                <input type="text" id="deliveryTel" name="deliveryTel" value="電話" size="9" style="width:25%; align-self: center;">
+                <input type="text" id="deliveryName" name="deliveryName" value="名字" size="9" style="width:15%; align-self: center;">
+                <input type="text" id="deliveryAddress" name="deliveryAddress" value="地址" size="30" style="width:60%; align-self: center;">                
+            </div>
+        </div>
+            <div id='container_B_placeOrder'></div>    
+    </div>
+
+    <span id="storeMaps" style="display: none;"></span>  <!-- retrieve maps from server and store responseStr here -->
+    <span id="storeProduct" style="display: none;"></span>  <!-- retrieve product to build array -->
+    <span id="storeProductType" style="display: none;"></span>  <!-- retrieve product to build array -->
+</body>
+</html>
+
+

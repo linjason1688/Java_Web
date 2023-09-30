@@ -1,0 +1,49 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2022年10月26日, 上午10:52:50
+    Author     : Jason
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#exHeader {
+    width: 100%;
+    height: 6vh;
+    background-color: yellow;
+    font-size: 32pt;
+    font-family: '標楷體';
+    color: blue;
+    text-align: center;
+}
+
+#exContent {
+    width: 100%;
+    height: 94vh;
+    font-family: '標楷體';
+    display: flex;
+}
+
+#exLeftAreaFunction {
+    width: 16%;
+    height: 94vh;
+    background-color: greenyellow;
+    border: 1px solid red;
+}
+
+#exRightAreaDisplay {
+    width: 84%;
+    height: 94vh;
+    background-color: pink;
+}
+
+iframe {
+    width: 950px;
+    height: 520px;
+}

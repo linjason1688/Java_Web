@@ -1,0 +1,22 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2022年9月1日, 下午7:24:55
+    Author     : eugene
+*/
+
+.dishDiv{
+    display: flex; justify-content:center;
+}
+
+.dishImage{
+    width:80px; height:50px;
+}
+
+.dishDiv:hover{
+    transform: scale(4,4);
+    transition: all 1s ease-out;
+}
+

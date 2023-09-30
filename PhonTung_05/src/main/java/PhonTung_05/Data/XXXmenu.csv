@@ -1,0 +1,13 @@
+﻿typeTag,dishType,dishName,unitPrice,dishNo,image
+begin,沙拉,,,,
+,沙拉,酪梨鮮蝦沙拉,3,沙拉01,image/A.PNG
+,沙拉,酪梨水果沙拉,4,沙拉02,image/B.PNG
+end,,,,,
+begin,飲料,,,,
+,飲料,可樂,2,飲料01,image/C.PNG
+,飲料,冰紅茶,3,飲料02,image/D.PNG
+end,,,,,
+begin,甜點,,,,
+,甜點,冰淇淋,2,甜點01,image/E.PNG
+,甜點,蛋糕,3,甜點02,image/E.PNG
+end,,,,,

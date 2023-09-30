@@ -1,0 +1,16 @@
+﻿typeTag,productType,productName,productPrice,productNo,image
+begin,馬桶,,,,
+,馬桶,和成HCG,260,馬桶01,image/A1.jpg
+,馬桶,TOTO,320,馬桶02,image/A2.jpg
+,馬桶,凱薩,260,馬桶03,image/A3.jpg
+end,,,,,
+begin,水龍頭,,,,
+,水龍頭,和成HCG,260,水龍頭01,image/B1.jpg
+,水龍頭,TOTO,300,水龍頭02,image/B2.jpg
+,水龍頭,凱薩,280,水龍頭03,image/B3.jpg
+end,,,,,
+begin,燈具,,,,
+,燈具,PHILIPS,80,燈具01,image/C1.jpg
+,燈具,OSRAM,80,燈具02,image/C2.jpg
+,燈具,TOSHIBA,100,燈具03,image/C3.jpg
+end,,,,,

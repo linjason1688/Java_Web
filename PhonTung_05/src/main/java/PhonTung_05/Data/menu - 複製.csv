@@ -1,0 +1,9 @@
+﻿typeTag,dishType,dishName,unitPrice,html_li,html_ul
+begin,沙拉,,,<li><a href='#' id='menu_type_A' onclick='toggle_menu_A();'>沙拉</a>,<ul id='menu_A' style='display:none;'>
+,沙拉,沙拉A,3,<li><a href='#' id='menuA_item_1' onclick='addShoppingCart();displayShoppingCart();'>,</a></li>
+,沙拉,沙拉B,4,<li><a href='#' id='menuA_item_2' onclick='addDish();'>,</a></li>
+end,,,,</ul></li>,
+begin,飲料,,,<li><a href='#' id='menu_type_B' onclick='toggle_menu_B();'>飲料</a>,<ul id='menu_B' style='display:none;'>
+,飲料,飲料A,2,<li><a href='#' id='menuB_item_1' onclick='addDish();'>,</a></li>
+,飲料,飲料B,3,<li><a href='#' id='menuB_item_2' onclick='addDish();'>,</a></li>
+end,,,,</ul></li>,

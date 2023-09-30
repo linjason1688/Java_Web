@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>有昌</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="companyFlip.css" />
+    <script src="slideShow.js"></script>
+    <script src="home.js"></script>
+</head>
+<body onload="carouselOfDisplayRow_1();">
+    <div class="headTitle">
+        <div class="headTitleLeft" >
+            <label for="checkByLabel" class="headTitleLeft"><image src="image/menuIcon.jpg" ></label>
+        </div>
+        <div class="headTitleRight">
+            <span style="align-self: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有昌農產品</span>  <!-- align-self: must be set up -->
+        </div>
+    </div>
+                        
+    <input type="checkbox" id="checkByLabel" 
+            style="display:none;" >              
+    <div id="leftAreaFunction" class="slidingMenu">
+        <div class="div_menu" style="display: flex; flex-direction: column; ">
+                <span style="color: purple; left: 0; font-size: 16px; font-family: 標楷體;">茶籽</span>
+                <a href="pdf/大粒苦茶籽.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">大粒苦茶籽</a>
+                <a href="pdf/中粒苦茶籽.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">中粒苦茶籽</a>
+                <a href="pdf/小粒苦茶籽.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">小粒苦茶籽</a>
+                <a href="pdf/茶葉籽.pdf" style="color: green; padding-left: 10px; font-size: 16px;">茶葉籽</a>
+
+                <span style="color: purple; left: 0; font-size: 16px; font-family: 標楷體;">茶葉</span>
+                <a href="pdf/青心大冇.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">青心</a>
+                <a href="pdf/台茶12.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">台茶12</a>
+                <a href="pdf/台茶17.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">台茶17</a>
+                
+                <span style="color: purple; left: 0; font-size: 16px; font-family: 標楷體;">東方美人茶</span>
+                <a href="#" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;" onclick="showOrientalTea_9();">簡介</a>
+                <a href="#" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;" onclick="showOrientalTea_10();">緣起</a>
+                <a href="#" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;" onclick="showOrientalTea_11();">特色</a>
+                <a href="pdf/東方美人茶製程.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">製程</a>
+                <a href="#" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;" onclick="showOrientalTea_5();">三等獎</a>
+                <a href="#" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;" onclick="showOrientalTea_6();">小綠葉</a>
+                
+                <span style="color: purple; left: 0; font-size: 16px; font-family: 標楷體;">茶油</span>
+                <a href="#companyRight" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;" onclick="showOrientalTea_7();">綠包裝</a>
+                
+                <span style="color: purple; left: 0; font-size: 16px; font-family: 標楷體;">製程</span>
+                <a href="pdf/熱壓製程.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">熱壓製程</a>
+                <a href="pdf/冷壓製程.pdf" style="color: green; padding-left: 10px; font-size: 16px; font-family: 標楷體;">冷壓製程</a>
+                
+        </div>
+    </div>
+    <div class="container">
+        <div class="displayRow_1">
+            <div class="slideShow " id="slideShow">  <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <img class="slideOfSlideShow"/>
+                <img class="slideOfSlideShow"/>
+                <img class="slideOfSlideShow"/>
+                <img class="slideOfSlideShow"/>
+                <img class="slideOfSlideShow"/>
+                <img class="slideOfSlideShow"/>
+                <a class="prev" onclick="prev();">&#10094;</a>
+                <a class="next" onclick="next();">&#10095;</a>                
+            </div>
+        </div>    
+        
+        <div class="displayRow_2">
+              <div class="card-wrap" >
+                <div class="card">            
+                    <div class="companyfront" id="companyLeft"
+                         style="background-image:url('image/farmer.jpg');">  
+                        <h1 id="companyLeft_title" style="z-index:1; 
+                                   font-size: 32; 
+                                   float:left; color:red; 
+                                   background-color: yellow; 
+                                   font-family: 標楷體; ">務本踏實</h1><br>
+                                   <span id="companyLeft_Span"
+                                         style="color: red;
+                                         background-color: white;
+                                         font-size: 16px; 
+                                         font-family: 標楷體;"></span>           
+                    </div>
+                    <div class="companyback">
+                        <p style="color: blue; font-family: 標楷體; font-size: 32; text-align: center">品質第一</p> 
+                        <p style="color: blue; font-family: 標楷體; font-size: 32; text-align: center">堅持專業</p> 
+                        <p style="color: blue; font-family: 標楷體; font-size: 32; text-align: center">供需雙贏</p>
+                    </div>
+                </div><!-- comment -->
+              </div>  
+              <div class="card-wrap" >
+                <div class="card">            
+                    <div class="companyfront" id="companyRight"
+                         style="background-image:url('image/honor.jpg');">  
+                        <h1 id="XXX_title" style="z-index:1; 
+                                   font-size: 32; 
+                                   float:left; color:red; 
+                                   background-color: yellow; 
+                                   font-family: 標楷體; ">永續經營</h1>
+                    </div> 
+                    <div class="companyback">
+                        <p style="color: red; font-family: 標楷體; font-size: 32; text-align: center">唯才是用</p>
+                        <p style="color: red; font-family: 標楷體; font-size: 32; text-align: center">崇尚品德</p>
+                        <p style="color: red; font-family: 標楷體; font-size: 32; text-align: center">職人精神 </p>
+                    </div>
+                </div><!-- comment -->
+              </div>              
+        </div>    
+        <div class="displayRow_3">
+            TEL:037-602256(廠)，FAX：037-603018；地址：351 苗栗縣頭份市信德路487巷3號；http：www.yehe.com.tw
+            
+        </div>       
+      
+
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>估價內容</title>
+    <link rel="stylesheet" href="price.css">
+    <script type="text/javascript" src="price.js"></script>
+</head>
+<body onload="caculate();">
+    <div class="banner">報價單</div>
+    
+    <div class="content">
+        <div class="leftAreaFunction">
+            <span>請點擊估價</span>
+
+            <div id="data">
+                <ul style="list-style:none; padding-left: 5px;">
+                    <li onclick="toilet_drop_down();">馬桶
+                        <ol id="toilet_ol" style="display: block;"></ol>
+                    </li>
+
+                </ul>
+                <form action="javaServle" target="responseArea">
+                    <input type="text" size="15" name="question" value="who are you" placeholder="write down here">
+                    <input type="submit" value="connect to web server" >
+                </form>
+            </div>
+        </div>
+        <div class="rightAreaDisplay">
+            <table>
+                <thead>
+                    <tr>
+                        <th>品名</th>
+                        <th>單價</th>
+                        <th>數量</th>
+                        <th>小計</th>
+                        <th>產品圖片</th>
+                        <th>刪除</th>
+                    </tr>
+                </thead>
+                <tbody id="tb">
+                    <tr>
+                        <td>合成HCG</td>
+                        <td id="unit_price">10000</td>
+                        <td>
+                            <input onchange="caculate();" id="input_1" type="text" size="2" value="1">
+                        </td>
+                        <td id="total">0</td>
+                        <td>
+                            <div class="productDiv">
+                               <img class="productImage" src="image/0.jpg">
+                            </div>
+                        </td>
+                        <td>
+                            <input type="submit" value="刪" onclick="deleteItem();">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
